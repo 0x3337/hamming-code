@@ -1,0 +1,201 @@
+/*================================ Designed by Mirsaid Patarov ================================*/
+/*====================================== Version: 21A301 ======================================*/
+
+/*========================================= CSS Reset =========================================*/
+
+* {
+  margin: 0;
+  padding: 0;
+
+  font-size: 100%;
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a { cursor: pointer; text-decoration: none; }
+li { list-style-type: none; }
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
+/*========================================== general ==========================================*/
+
+body {
+  background: #282d37;
+}
+
+/*============================================ main ===========================================*/
+
+main {
+  min-height: calc(100vh - 40px);
+}
+
+.hamming {
+  padding: 256px 0 32px;
+
+  -webkit-transition: padding-top .7s ease-in-out;
+     -moz-transition: padding-top .7s ease-in-out;
+          transition: padding-top .7s ease-in-out;
+}
+
+.hamming.active {
+  padding-top: 32px;
+
+  transition: padding-top .7s ease-in-out;
+}
+
+.hamming h1 {
+  padding-bottom: 16px;
+  color: #fff;
+  font-size: 32px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.hamming .input-group {
+  width: 512px;
+  max-width: 512px;
+  height: 40px;
+  margin: 0 auto;
+
+  font-size: 16px;
+
+  border: none;
+  border-radius: 2px;
+
+  background: #fff;
+
+  outline: 0;
+  overflow: hidden;
+
+  -webkit-transition: box-shadow .3s ease-in-out;
+     -moz-transition: box-shadow .3s ease-in-out;
+          transition: box-shadow .3s ease-in-out;
+}
+
+.hamming .input-group.focus {
+  border-color: #3b9be3;
+
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+
+  -webkit-transition: box-shadow .3s ease-in-out;
+     -moz-transition: box-shadow .3s ease-in-out;
+          transition: box-shadow .3s ease-in-out;
+}
+
+.hamming .input-group input {
+  width: 472px;
+  height: 40px;
+  padding: 0 8px;
+
+  font-size: 16px;
+
+  outline: 0;
+  border: none;
+  
+  float: left;
+  display: block;
+}
+
+.hamming .input-group .file {
+  width: 40px;
+  height: 40px;
+
+  cursor: pointer;
+
+  float: left;
+
+  position: relative;
+}
+
+.hamming .input-group .file:hover {
+  background-color: #cecece;
+}
+
+.hamming .input-group .file .icon {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+
+  background-image: url('../images/file.png');
+  background-size: 20px 20px;
+
+  display: block;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hamming .input-group .file input {
+  width: 40px;
+  opacity: 0;
+
+  cursor: pointer;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hamming .res-box {
+  width: 512px;
+  min-height: 32px;
+  margin: 32px auto 0;
+  padding: 8px;
+  
+  border-radius: 2px;
+
+  background: #fff;
+
+  display: none;
+}
+
+.hamming .res-box.active {
+  display: block;
+}
+
+.hamming .res-box p {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.hamming .res-box p .error {
+  color: #f30000;
+}
+
+.hamming .res-box.success {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(107, 190, 76, .6);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(107, 190, 76, .6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(107, 190, 76, .6);
+}
+
+.hamming .res-box.error {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(243, 0, 0, .6);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(243, 0, 0, .6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(243, 0, 0, .6);
+}
+
+/*=========================================== footer ==========================================*/
+
+footer {
+  width: 100%;
+  height: 40px;
+  margin: 0;
+  padding: 11px 0 12px;
+
+  border-top: 1px solid #51545d;
+}
+
+footer p {
+  color: #929498;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+}
